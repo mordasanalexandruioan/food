@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Header start */
+
+header {
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3%;
+}
+
+.nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .nav-item-left {
+    text-align: center;
+    margin: 3% 0%;
+}
+
+.nav .nav-item-left a {
+    color: black;
+}
+
+#dot {
+    color: rgb(247, 1, 86);
+}
+
+.nav .brand {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.nav .nav-items-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 40px;
+    margin-bottom: 3%;
+}
+
+.nav .item-right {
+    max-width: 100px;
+    margin: 0px 2px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    max-height: 25px;
+}
+
+.nav .item-right a {
+    color: black;
+}
+
+.nav .item-right a:hover {
+    color: rgb(247, 1, 86);
+}
+
+
+/* Header end */
+
+
+/* Page-start  start */
+
+.page-start {
+    color: white;
+    text-align: center;
+    padding: 4%;
+}
+
+.page-start h1 {
+    margin: 0px;
+}
+
+.page-start p {
+    max-width: 543px;
+    margin: 3% auto;
+}
+
+
+/* Page-start  end */
+
+.page-button {
+    background-color: rgb(247, 1, 86);
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5em;
+    border-radius: 0.1em;
+}
+
+.page-button:hover {
+    letter-spacing: 0.2em;
+}
+
+
+/* About Us section start */
+
+.about {
+    padding: 2% 3%;
+}
+
+.about h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-img {
+    float: right;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em 0px;
+}
+
+#p1 {
+    margin-bottom: 0px;
+}
+
+#p2 {
+    margin-top: 0px;
+}
+
+
+/* About Us section end */
+
+.uppercase-letter {
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: rgb(247, 1, 86);
+}
+
+
+/* Menu section start */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2% 3%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.menu-images figcaption {
+    margin: 0% auto 5% auto;
+    box-shadow: 0px 0px 5px gray;
+    max-width: 370px;
+}
+
+.menu-images .page-button {
+    box-shadow: none;
+}
+
+.btn {
+    margin-top: 1.2em;
+    box-shadow: none;
+    margin-bottom: 5%;
+}
+
+.menu h2 {
+    font-weight: 500;
+}
+
+.menu p {
+    margin: 0px;
+    padding: 3%;
+}
+
+.menu-images img {
+    width: 100%;
+}
+
+
+/* Menu section end */
+
+
+/* Experts section start */
+
+.experts {
+    padding: 2% 3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.experts h2 {
+    font-weight: 500;
+}
+
+.experts-images img {
+    width: 100%;
+}
+
+.experts-images .center {
+    max-width: 400px;
+    margin: 0% auto 4% auto;
+}
+
+.experts-images p {
+    text-align: left;
+    margin-top: 1%;
+}
+
+
+/* Experts section end */
+
+
+/* Testimonial section start */
+
+.testimonials {
+    background-image: url(img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 3%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.testimonials h2 {
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.card-testi {
+    background-color: white;
+    padding: 1.2em 1.5em;
+    color: gray;
+    max-width: 320px;
+    margin: 0% auto 4% auto;
+}
+
+.card-testi p {
+    font-style: italic;
+}
+
+.card-testi img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 4em;
+}
+
+.card-testi span {
+    font-style: normal;
+    color: rgb(247, 1, 86);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+/* Testimonial section end */
+
+
+/* Contact section start */
+
+.contact {
+    background-image: url(img/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2% 3%;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact-card {
+    text-align: left;
+    box-shadow: 0px 2px 5px gray;
+    padding: 4%;
+    background-color: white;
+    max-width: 565px;
+}
+
+.contact-card p {
+    font-weight: 600;
+}
+
+.contact-card .textbox {
+    border: solid 1px rgb(158, 158, 158);
+    color: gray;
+    width: 70%;
+    padding: 0.6em;
+}
+
+#message {
+    padding-bottom: 2em;
+    margin-bottom: 5%;
+}
+
+
+/* Contact section start */
+
+@media (min-width:600px) {
+    /* Header start*/
+    header {
+        height: 70vh;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0% 2%;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 1px 4px gray;
+        max-height: 66px;
+    }
+    .nav .nav-item-left {
+        margin: 1.2em 0px;
+    }
+    .nav .nav-items-right {
+        margin: 1.5em 0px;
+        height: fit-content;
+    }
+    .nav .nav-items-right .item-right {
+        margin-left: 0.6em;
+    }
+    .page-start {
+        margin-top: 7em;
+    }
+    /* Header start*/
+    /* Menu start*/
+    .menu-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "m1 m2" "m3 m4" "m5 m6" "btn btn";
+        grid-gap: 1em;
+        max-width: 658px;
+        margin: 0 auto;
+    }
+    .menu p {
+        padding: 1%;
+        margin-bottom: 2%;
+    }
+    #m1 {
+        grid-area: m1;
+    }
+    #m2 {
+        grid-area: m2;
+    }
+    #m3 {
+        grid-area: m3;
+    }
+    #m4 {
+        grid-area: m4;
+    }
+    #m5 {
+        grid-area: m5;
+    }
+    #m6 {
+        grid-area: m6;
+    }
+    .menu-images figcaption {
+        max-width: 320px;
+    }
+    /* Menu end */
+    /* Experts start */
+    .experts-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 636px;
+        margin: 0 auto;
+    }
+    .experts-images .center {
+        width: 270px;
+    }
+    /* Experts end */
+    /* Testimonials start */
+    .testi-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 594px;
+        margin: 0 auto;
+    }
+    .card-testi {
+        max-width: 270px;
+    }
+    /* Testimonials end */
+}
+
+@media (min-width:1024px) {
+    header {
+        height: 100vh;
+    }
+    .page-start {
+        margin-top: 12em;
+    }
+    .page-start h1 {
+        font-size: 4rem;
+    }
+    .page-start p {
+        font-size: 1.2rem;
+        max-width: 900px;
+    }
+    .about {
+        height: 80vh;
+    }
+    .about h2 {
+        text-align: left;
+    }
+    .about-img {
+        max-width: 600px;
+    }
+    #p1 {
+        width: 50%;
+    }
+    #p2 {
+        width: 50%;
+    }
+    #p3 {
+        width: 50%;
+    }
+    .menu {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+    }
+    .menu p {
+        padding: 10px;
+        margin-bottom: 1%;
+    }
+    .menu-images {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "m1 m2 m3" "m4 m5 m6";
+        max-width: 850px;
+    }
+    .experts-images {
+        max-width: 1300px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .experts-images figcaption {
+        margin-right: 0.7em;
+    }
+    .testi-box {
+        max-width: 850px;
+    }
+    .card-testi {
+        margin-right: 0.7em;
+    }
+    .contact-card {
+        max-width: 650px;
+        margin-top: 6%;
+    }
+}
+
+@media(min-width:1550px) {
+    .about-img {
+        max-width: 700px;
+    }
+}
